@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    .wrap {
+        border: 1px solid #000;
+        text-align: center;
+    }
+    .box {
+        margin-top: 1rem;
+        width: 200px;
+        height: 200px;
+        background: gold;
+    }
+    .gold {
+        background: gold;
+    }
+    .coral {
+        background: coral;
+    }
+</style>
+</head>
+<body>
+
+    <div class="wrap">
+        <button onclick="handleRemoveColor();">
+            remove color
+        </button>
+        <button onclick="handleAddColor();">
+            add color
+        </button>
+        <button onclick="handleToggleColor();">
+            toggle color
+        </button>
+    
+        <div class="box gold">
+    
+        </div>
+    </div>
+    <!-- 
+        클릭하면 coral 색상으로 변해라
+
+        1. evernt 선언
+        2. 함수 선언
+        3. box ele를 가져온다
+        4. 클릭했을때 엘리먼트 객체의 style color를 변경한다
+    -->
+
+
+    <script>
+        function handleRemoveColor(){
+            var box = document.querySelector('.box');
+            // console.log(box);
+            console.dir(box);
+            box.classList.remove('gold')
+            // box
+        }
+        function handleAddColor(){
+            var box = document.querySelector('.box');
+            // console.log(box);
+            console.dir(box);
+            box.classList.add('coral');
+            // box
+        }
+        function handleToggleColor(){
+            var box = classList.toggle('coral');
+            // console.log(box);
+            console.dir(box);
+            box.classList.add('coral');
+            // box
+        }
+
+        function handleRemoveColor(){
+            box.classList.remove('gold')
+        }
+        function handleAddColor(){
+            box.classList.add('coral');
+        }
+        function handleToggleColor(){
+            box.classList.toggle('coral');
+        }
+    </script>
+</body>
+</html>

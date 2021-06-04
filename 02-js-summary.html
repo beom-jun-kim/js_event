@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+</head>
+<body>
+    <script>
+
+
+        // 객제 점 접근법이다 = 대입연산자
+        window.html.css = "box2";
+
+        var document = {
+            body : {
+                div : {
+                    h1: "타이틀",
+                    ul: {
+                        value: "타이틀",
+                        element: {
+                            li:"menu1"
+                        }
+                    }
+                }
+            }
+        }
+
+        console.log(document1.body1.div.h1);
+    </script>
+</body>
+</html>

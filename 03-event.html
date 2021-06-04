@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title></title>
+<style>
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    button {
+        border: none;
+        padding: 1rem;
+        background: #f5d042;
+        color: #000;
+        cursor: pointer;
+    }
+    /* 
+    셀렉팅 :선택한다
+    프로퍼티 선언하고 설정해준다 color:blue;
+     */
+    h1 {
+
+    }
+</style>
+</head>
+<body>
+
+    <!-- <button style="color:red; font-size: 2rem;" 
+    onclick="handleColor();">
+        click
+    </button> -->
+
+
+    <button class="btn-class" id="btn-id">click</button>
+    <button class="btn-class">click</button>
+    <button class="btn-class">click</button>
+
+    <h1>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos quas eaque, voluptates repellendus consectetur eius enim omnis possimus rem aperiam unde ab dolores nemo dolorum quasi. Ut repellat aspernatur corrupti.
+    </h1>
+
+
+    <script>
+        // console.dir(document);
+        // var document = {
+        //     quer : function(){
+
+        //     }
+        // }
+
+        // 매개변수에 태그네임을 전달
+        // var btn = document.querySelector('button');
+        var btnClass = document.querySelectorAll('.btn-class');
+        // var btnId = document.querySelector('#btn-id');
+
+        
+        cosole.dir(btnClass[0]);
+        cosole.dir(btnClass[1]);
+        cosole.dir(btnClass[2]);
+        btnClass[2].style.color = "red";
+        // console.log(btnId);
+        // btn.style.color = "blue";
+        // btn.style.width = "300px";
+
+        // function handleColor(){
+        //     var h1 = document.querySelector('h1');
+        //     console.log(h1);
+        //     console.dir(h1);
+        //     h1.style.color = "blue";
+        //     h1.style.background = "coral";
+        // }
+    </script>
+</body>
+</html>
